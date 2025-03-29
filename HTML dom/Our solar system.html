@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML DOM</title>
+        <style>
+            .alert{
+                color: palevioletred;
+               background-color: palegreen;
+               padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+     <header>
+        <h1 id="heading">Welcome</h1>
+        <p>Our Solar system</p>
+     </header>
+     <p>let us learn about our solar system</p>
+     <script>
+        let div= document.createElement('div');
+        div.id= "paragraph"
+        div.className ="alert";
+        div.innerHTML= "<p> Our solar system includes the Sun, eight planets, five officially named dwarf planets, hundreds of moons, and thousands of asteroids and comets. Our solar system is located in the Milky Way, a barred spiral galaxy with two major arms, and two minor arms.</p>";
+        document.body.append(div);
+        let heading= document.getElementById("heading");
+        heading.innerHTML='&#128512';
+        document.querySelector="<strong> Now you have learned about our solar system </strong>"
+     </script>
+    </body>
+</html>

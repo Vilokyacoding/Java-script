@@ -11,12 +11,13 @@
         <button onclick="typeandscream ()">Please Please dont click me!</button>
         <button onclick="finishthestory()">Tell me what happend</button>
         <!-- <audio id="audio" src="http://reboot-me.com/ouch.mp3" type="audio/mpeg"></audio> -->
+        <audio src ="ouch.mp3" controls></audio>
          <script>
             function typeandscream() {
                 // Uncomment the comented codes to use the audio
                 // document.getElementById("audio").play();
                 var personName =document.getElementById("name").value;
-                alert("I told you not to do that" + personName);
+                alert("I told you not to do that " + personName);
             }
             function goDark() {
                 document.body.className ="dark";

@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Carousel</title>
-        
-    </head>
-    <body>
-        <h1>Carousel</h1>
-        <!-- slideshow -->
-         <section>
-            <img class="mySlides" src="dog.jpg" style="height: 500px;">
-            <img class="mySlides" src="Penguins.jpeg" style="height: 500px;">
-            <img class="mySlides" src="ferrets.jpg" style="height: 500px;">
-            <img class="mySlides" src="cat.jpg" style="height: 500px;">
-            <img class="mySlides" src="duck.jpg" style="height: 500px;">
-            <img class="mySlides" src="panda.jpg" style="height: 500px;">  
-            <img class="mySlides" src="fish.jpg" style="height: 500px;">
-            <img class="mySlides" src="unicorn.jpg" style="height: 500px;">  
-            <img class="mySlides" src="horse.jpg" style="height: 500px;">
-            <img class="mySlides" src="turtle.jpg" style="height: 500px;">  
-            
+<head>
+    <title>Plushie House</title>
+    <style>
+        body {
+           background-color: rgb(213, 136, 161);
+           font-family: 'Courier New', Courier, monospace;
+        }
+    
+         .top-nav {
+        overflow: hidden;    
+        background-color: palegreen;     
+        }
+        .top nav a {
+            float: left;
+            color: rgb(255, 127, 242);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+        .top nav a:hover {
+            background-color: plum;
+            color: black;
+        }
+        .top nav a.active {
+            background-color: #ffe066;
+            color: black;
+        }
 
-        
-           
-         </section>
-         <script>
-           var myIndex = 0; 
-              slideshow();
-              function slideshow() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-               for (i =0; i < x.length; i++); {
-                x [i].style.display = "none";  
-                }
-                myIndex++;
-                if (myIndex > x.length,i++) { myIndex = 1}
-                    x[myIndex -1].style.display = "block";
-                    setTimeout(slideshow, 3000); 
-                }
-         </script>
-    </body>
+
+    </style>
+    
+</head>
+<body>
+    <h1 style='color: black; font-size: 70px;'>
+        Plushie House
+    </h1>
+    <div class="top-nav">
+        <a class="active" href="#home">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact Us</a>
+    </div>
+</body>
 </html>
